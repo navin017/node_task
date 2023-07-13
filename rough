@@ -1,0 +1,56 @@
+// const newMarksData = await Marks.create({
+            //     tamil: 90,
+            //     english: 80,
+            //     maths: 70,
+            //   });
+            //   const createdMarks = await details.createDetails(marks);
+    //   await student.setMarks(createdMarks);
+    //Creating new Student_name
+
+// app.post('/create', async (req, res) => {
+//     let result = {
+//         code: 200,
+//         message: "",
+//         data: null,
+//     }
+//     try {
+//         const studentfName = req.body.fname;
+//         const studentlName = req.body.lname
+//         // const studentTMark = req.body.tm
+//         // const studentEMark = req.body.em
+//         // const studentMMark = req.body.mm
+//         console.log("body-------", studentfName, studentlName);
+//         await details.createDetails(studentfName, studentlName);
+//         if (studentfName && studentlName) {
+//             result = {
+//                 data: `${studentfName} ${studentlName}`,
+//                 message: "Students name fetched succefully",
+//                 code: 200,
+//             }
+//         }
+//         if (studentfName && !studentlName) {
+//             result = {
+//                 code: 500,
+//                 message: "Please fill the Last name of the student",
+//                 data: null,
+//             }
+//         }
+//         if (!studentfName && studentlName) {
+//             result = {
+//                 code: 500,
+//                 message: "Please fill the first name of the student",
+//                 data: null,
+//             }
+//         }
+//         res.send(result)
+//     }
+//     catch (err) {
+//         console.log("Error occurred in  Students name  creating API: ", err);
+//         result = {
+//             code: 500,
+//             message: "Error occurred while creating Students name ",
+//             data: null,
+//         }
+//         res.send(result);
+//     }
+// })
