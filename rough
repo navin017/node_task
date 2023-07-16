@@ -24,6 +24,9 @@
 //         if (studentfName && studentlName) {
 //             result = {
 //                 data: `${studentfName} ${studentlName}`,
+
+
+
 //                 message: "Students name fetched succefully",
 //                 code: 200,
 //             }
@@ -54,3 +57,14 @@
 //         res.send(result);
 //     }
 // })
+
+
+test("Handling error on /getGood", async () => {
+  try {
+    await getGood();
+    // Fail the test if the getGood function does not throw an error
+    expect(true).toBe(false);
+  } catch (error) {
+    expect(error).toMatch("Error");
+  }
+});
